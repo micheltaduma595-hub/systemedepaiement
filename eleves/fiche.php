@@ -1,0 +1,6 @@
+<?php
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../controllers/EleveController.php';
+
+$controller = new EleveController();
+$controller->fiche($_GET['id'] ?? 0);
